@@ -12,12 +12,12 @@ import {
 } from 'native-base'
 import React from 'react'
 
-function Signin({ navigation }: { navigation: any }) {
+function Signup({ navigation }: { navigation: any }) {
   return (
     <VStack display="flex" direction="column" alignItems="center" space={4} h="100%" pt="8">
       <Box textAlign="center">
-        <Heading>Welcome Back!</Heading>
-        <Text textAlign="center">Ready for another date?</Text>
+        <Heading textAlign="center">Welcome</Heading>
+        <Text textAlign="center">Ready to improve your dating life?</Text>
       </Box>
       <VStack w="80%" mx="auto" space={4}>
         <FormControl>
@@ -40,9 +40,8 @@ function Signin({ navigation }: { navigation: any }) {
             borderRadius="md"
           />
         </FormControl>
-        <Text textAlign="right">Recovery Password</Text>
         <Button colorScheme="orange" p="4" fontSize="lg">
-          Sign In
+          Sign Up
         </Button>
       </VStack>
 
@@ -71,11 +70,11 @@ function Signin({ navigation }: { navigation: any }) {
         </Button>
       </HStack>
 
-      <Link mt="auto" mb="12" onPress={() => navigation.navigate('Sign Up')}>
-        Not a member? Register
+      <Link mt="auto" mb="12" onPress={() => navigation.navigate('Sign In')}>
+        Already a member? Login
       </Link>
     </VStack>
   )
 }
 
-export default Signin
+export default Signup

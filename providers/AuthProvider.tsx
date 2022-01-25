@@ -4,10 +4,14 @@ import { AuthData, AuthContextData } from '../services/authService'
 export const AuthContext = createContext<AuthContextData>({} as AuthContextData)
 
 export const AuthProvider: React.FC = ({ children }) => {
-  const [authData, setAuthData] = useState<AuthData>()
+  const [authData, setAuthData] = useState<AuthData | undefined>({
+    token: '',
+    email: '',
+    name: '',
+  })
 
   //The loading part will be explained in the persist step session
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
 
   const signIn = async () => {
     console.log('Sign in')
@@ -15,7 +19,7 @@ export const AuthProvider: React.FC = ({ children }) => {
     //In a real App this data will be provided by the user from some InputText components.
     // const _authData = await authService.signIn(
     //   'lucasgarcez@email.com',
-    //   '123456',
+    //   '123456',r
     // );
 
     // //Set the data in the context, so the App can be notified

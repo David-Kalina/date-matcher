@@ -4,8 +4,6 @@ import React from 'react'
 import { AuthProvider } from './providers/AuthProvider'
 import { Router } from './screens/Router'
 
-const Stack = createNativeStackNavigator()
-
 // Define the config
 const config = {
   useSystemColorMode: false,
