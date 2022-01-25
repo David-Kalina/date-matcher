@@ -1,8 +1,8 @@
 import { Box } from 'native-base'
 import React from 'react'
 
-function Test() {
-  return <Box>Test</Box>
+function Home() {
+  return <Box>Home</Box>
 }
 
-export default Test
+export default Home
