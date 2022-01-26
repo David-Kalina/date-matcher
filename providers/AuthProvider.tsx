@@ -5,7 +5,7 @@ export const AuthContext = createContext<AuthContextData>({} as AuthContextData)
 
 export const AuthProvider: React.FC = ({ children }) => {
   const [authData, setAuthData] = useState<AuthData | undefined>({
-    token: '',
+    token: 'hi',
     email: '',
     name: '',
   })

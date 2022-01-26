@@ -23,8 +23,8 @@ function Signup({ navigation }: { navigation: any }) {
         <FormControl>
           <Input
             h="50px"
-            type="text"
-            placeholder="Username"
+            type="email"
+            placeholder="Email"
             fontSize="md"
             bg="white"
             borderRadius="md"

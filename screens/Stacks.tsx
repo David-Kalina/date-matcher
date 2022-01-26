@@ -3,12 +3,14 @@ import Home from '../components/Home'
 import Signin from '../components/Auth/Signin'
 import React from 'react'
 import Signup from '../components/Auth/Signup'
+import Match from '../components/Match'
 const Stack = createNativeStackNavigator()
 
 export const AppStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Match" component={Match} />
     </Stack.Navigator>
   )
 }
