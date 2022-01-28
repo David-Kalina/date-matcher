@@ -8,6 +8,7 @@ import {
   Icon,
   Input,
   InputLeftAddon,
+  Link,
   ScrollView,
   SearchIcon,
   Skeleton,
@@ -29,7 +30,7 @@ function Home({ navigation }: { navigation: any }) {
         <Text fontSize="xl" fontWeight="bold">
           Categories
         </Text>
-        <Text>See all</Text>
+        <Link onPress={() => navigation.navigate('All Categories')}>See all</Link>
       </HStack>
 
       <ScrollView h="500px" mt="4">

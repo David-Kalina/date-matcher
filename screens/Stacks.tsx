@@ -4,6 +4,8 @@ import Signin from '../components/Auth/Signin'
 import React from 'react'
 import Signup from '../components/Auth/Signup'
 import Match from '../components/Match'
+import AllCategories from '../components/AllCategories'
+import Invite from '../components/Invite'
 const Stack = createNativeStackNavigator()
 
 export const AppStack = () => {
@@ -11,6 +13,8 @@ export const AppStack = () => {
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Match" component={Match} />
+      <Stack.Screen name="All Categories" component={AllCategories} />
+      <Stack.Screen name="Invite" component={Invite} />
     </Stack.Navigator>
   )
 }

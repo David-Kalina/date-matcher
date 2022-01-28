@@ -2,7 +2,6 @@ import { VStack, Text, Heading, Skeleton, HStack, Icon, Button } from 'native-ba
 import React from 'react'
 
 function Match(props: any) {
-  console.log(props)
   return (
     <VStack alignItems="stretch" p="6" space={8}>
       <Heading textAlign="center">{props.route.params.name}</Heading>
