@@ -1,7 +1,7 @@
 import { HStack, Skeleton, Box, ChevronRightIcon, Text, Pressable } from 'native-base'
 import React from 'react'
 
-function Category({ navigation, name }: { navigation: any, name: string }) {
+function Category({ navigation, name }: { navigation: any; name: string }) {
   const navigate = () => {
     navigation.navigate('Match', { name })
   }

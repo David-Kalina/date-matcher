@@ -6,15 +6,17 @@ import Signup from '../components/Auth/Signup'
 import Match from '../components/Match'
 import AllCategories from '../components/AllCategories'
 import Invite from '../components/Invite'
+import CreateRoom from '../components/CreateRoom'
+import ChooseCategory from '../components/ChooseCategory'
 const Stack = createNativeStackNavigator()
 
 export const AppStack = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Choose Category" component={ChooseCategory} />
       <Stack.Screen name="Match" component={Match} />
       <Stack.Screen name="All Categories" component={AllCategories} />
-      <Stack.Screen name="Invite" component={Invite} />
     </Stack.Navigator>
   )
 }

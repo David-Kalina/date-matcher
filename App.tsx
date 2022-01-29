@@ -1,4 +1,5 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import axios from 'axios'
 import { extendTheme, HStack, NativeBaseProvider, Switch, Text, useColorMode } from 'native-base'
 import React from 'react'
 import { AuthProvider } from './providers/AuthProvider'
